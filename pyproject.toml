@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simulated-ptychography-dataset"
+version = "0.1.0"
+description = "Simulated dataset generator for near and far-field Ptychography"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "scipy",
+    "scikit-image",
+    "h5py",
+    "xraydb",
+    "hotopy",
+    "tqdm",
+]
+
+[tool.setuptools]
+packages = ["simulated_ptychography_dataset"]
+
+[tool.setuptools.package-dir]
+simulated_ptychography_dataset = "."
